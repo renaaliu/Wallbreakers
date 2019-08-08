@@ -38,3 +38,32 @@ class Solution {
 Runtime: 2 ms, faster than 70.57% of Java online submissions
 Memory Usage: 33.7 MB, less than 34.46% of Java online submissions
 */
+
+
+// Second, hopefully clearner attempt:
+
+/*
+import java.util.*;
+
+class Solution {
+    public List<Integer> selfDividingNumbers(int left, int right)       {
+       List<Integer> ret = new ArrayList<Integer>();
+        for (int i = left; i <= right; i++) {
+            int cop = i;
+            int a = i % 10;
+            while (a != 0 && i % a == 0) {
+                if (cop >= 0) {
+                    cop /= 10;
+                    a = cop % 10;
+                 } 
+            }
+            if (cop < 0) {
+                ret.add(i);
+            }
+        }
+        return ret;
+    }
+}
+    
+    // outputs blank array but not sure why
+*/
