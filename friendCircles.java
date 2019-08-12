@@ -45,3 +45,7 @@ class Solution {
         return friends;
     }
 }
+
+/*
+Line 36 index out of bounds? 0
+*/
